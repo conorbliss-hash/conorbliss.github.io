@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="container">
         <div className="hero-content">
           <div className="hero-image-wrapper">
-            <img src="/profile.jpg" alt="Conor Bliss" className="hero-image" />
+            <img src="./profile.jpg" alt="Conor Bliss" className="hero-image" />
           </div>
           <h1 className="hero-headline">{hero.headline}</h1>
           <p className="hero-subheadline">{hero.subheadline}</p>
