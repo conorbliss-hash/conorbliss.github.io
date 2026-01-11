@@ -62,6 +62,24 @@
   opacity: 0.9;
 }
 
+.domain-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--spacing-unit) * 1.5);
+  margin-bottom: calc(var(--spacing-unit) * 4);
+}
+
+.domain-tag {
+  padding: calc(var(--spacing-unit) * 0.75) calc(var(--spacing-unit) * 2);
+  background-color: rgba(139, 152, 168, 0.15);
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
 .marquee-description {
   font-size: 1.0625rem;
   color: var(--text-primary);
@@ -72,8 +90,18 @@
 .marquee-approach {
   font-size: 1rem;
   color: var(--text-secondary);
+  margin-bottom: calc(var(--spacing-unit) * 4);
+  line-height: 1.6;
+}
+
+.organizational-bridge {
+  font-size: 0.9375rem;
+  color: var(--text-dim);
   margin-bottom: calc(var(--spacing-unit) * 5);
   line-height: 1.6;
+  padding-left: calc(var(--spacing-unit) * 3);
+  border-left: 2px solid var(--accent-blue-dim);
+  font-style: italic;
 }
 
 .marquee-tags {

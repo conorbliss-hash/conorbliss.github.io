@@ -16,8 +16,18 @@ export default function MarqueeProject() {
             <h3 className="marquee-title">{marquee.title}</h3>
             <p className="marquee-tagline">{marquee.tagline}</p>
           </div>
+          {marquee.domainTags && marquee.domainTags.length > 0 && (
+            <div className="domain-tags">
+              {marquee.domainTags.map((tag, index) => (
+                <span key={index} className="domain-tag">{tag}</span>
+              ))}
+            </div>
+          )}
           <p className="marquee-description">{marquee.problem}</p>
           <p className="marquee-approach">{marquee.approach}</p>
+          {marquee.organizationalBridge && (
+            <p className="organizational-bridge">{marquee.organizationalBridge}</p>
+          )}
           <div className="marquee-tags">
             {marquee.tags.map((tag, index) => (
               <span key={index} className="tag">{tag}</span>

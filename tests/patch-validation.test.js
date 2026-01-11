@@ -35,38 +35,48 @@ describe('Patch A - Homepage Copy Updates', () => {
     });
   });
 
-  describe('A2 - Trust Signals', () => {
-    it('should have exactly 4 bullets', () => {
-      expect(siteData.proofSignals).toHaveLength(4);
+  describe('A2 - Assertions (Consolidated Trust Signals + Principles)', () => {
+    it('should have 5-9 assertions (consolidated from 9 items)', () => {
+      expect(siteData.assertions).toBeDefined();
+      expect(siteData.assertions.length).toBeGreaterThanOrEqual(5);
+      expect(siteData.assertions.length).toBeLessThanOrEqual(9);
     });
 
-    it('should contain new copy for bullet 1', () => {
-      expect(siteData.proofSignals[0]).toBe(
-        'Built and shipped governed AI systems used in live organizational workflows'
+    it('should have assertions with claim and explainer fields', () => {
+      siteData.assertions.forEach(assertion => {
+        expect(assertion.id).toBeDefined();
+        expect(assertion.claim).toBeDefined();
+        expect(assertion.explainer).toBeDefined();
+      });
+    });
+
+    it('should cover deterministic-first principle', () => {
+      const hasDeterministic = siteData.assertions.some(a => 
+        a.claim.toLowerCase().includes('deterministic')
       );
+      expect(hasDeterministic).toBe(true);
     });
 
-    it('should contain new copy for bullet 2', () => {
-      expect(siteData.proofSignals[1]).toBe(
-        'Designed deterministic automations with AI used only where ambiguity remained'
+    it('should cover governance principle', () => {
+      const hasGovernance = siteData.assertions.some(a => 
+        a.claim.toLowerCase().includes('governance') || 
+        a.explainer.toLowerCase().includes('governance')
       );
+      expect(hasGovernance).toBe(true);
     });
 
-    it('should contain new copy for bullet 3', () => {
-      expect(siteData.proofSignals[2]).toBe(
-        'Focused on validation, auditability, and failure containment'
+    it('should cover failure modes principle', () => {
+      const hasFailure = siteData.assertions.some(a => 
+        a.claim.toLowerCase().includes('failure') ||
+        a.explainer.toLowerCase().includes('failure')
       );
+      expect(hasFailure).toBe(true);
     });
 
-    it('should contain new copy for bullet 4', () => {
-      expect(siteData.proofSignals[3]).toBe(
-        'Owned systems end-to-end from data ingestion to decision outputs'
-      );
-    });
-
-    it('should not have nested arrays or objects', () => {
-      siteData.proofSignals.forEach(signal => {
-        expect(typeof signal).toBe('string');
+    it('should have explainers that provide reasoning', () => {
+      siteData.assertions.forEach(assertion => {
+        expect(typeof assertion.explainer).toBe('string');
+        expect(assertion.explainer.length).toBeGreaterThan(50);
       });
     });
   });
@@ -134,22 +144,27 @@ describe('Patch A - Homepage Copy Updates', () => {
     });
   });
 
-  describe('A5 - Operating Principles', () => {
-    it('should update section title to "Operating Principles"', () => {
-      // This will be checked in component, but data structure should support it
-      expect(siteData.designPrinciples).toBeDefined();
+  describe('A5 - Operating Principles (Now Part of Assertions)', () => {
+    it('should have assertions covering operating principles', () => {
+      expect(siteData.assertions).toBeDefined();
+      expect(siteData.assertions.length).toBeGreaterThanOrEqual(5);
     });
 
-    it('should have exactly 5 principles', () => {
-      expect(siteData.designPrinciples).toHaveLength(5);
+    it('should have human checkpoints principle', () => {
+      const hasHumanCheckpoints = siteData.assertions.some(a => 
+        a.claim.toLowerCase().includes('human') || 
+        a.explainer.toLowerCase().includes('human')
+      );
+      expect(hasHumanCheckpoints).toBe(true);
     });
 
-    it('should have principles in correct order', () => {
-      expect(siteData.designPrinciples[0]).toBe('Deterministic before probabilistic');
-      expect(siteData.designPrinciples[1]).toBe('Governance before scale');
-      expect(siteData.designPrinciples[2]).toBe('AI only where ambiguity exists');
-      expect(siteData.designPrinciples[3]).toBe('Human checkpoints by default');
-      expect(siteData.designPrinciples[4]).toBe('Design for failure modes, not happy paths');
+    it('should have end-to-end ownership principle', () => {
+      const hasOwnership = siteData.assertions.some(a => 
+        a.claim.toLowerCase().includes('ownership') ||
+        a.claim.toLowerCase().includes('end-to-end') ||
+        a.explainer.toLowerCase().includes('end-to-end')
+      );
+      expect(hasOwnership).toBe(true);
     });
   });
 });

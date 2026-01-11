@@ -4,8 +4,8 @@
   --accent-blue: #00d4ff;
   --accent-blue-dim: #0099cc;
   --text-primary: #e8eef5;
-  --text-secondary: #8b98a8;
-  --text-dim: #5a6a7d;
+  --text-secondary: #a3b1c2;
+  --text-dim: #7a8a9d;
   --border-subtle: #2a3d54;
   --spacing-unit: 8px;
   --max-width: 1200px;
@@ -21,12 +21,19 @@
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--primary-bg);
+  background: linear-gradient(135deg, #0d1b2a 0%, #1a2d42 50%, #0d1b2a 100%);
+  background-attachment: fixed;
   color: var(--text-primary);
   line-height: 1.6;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
 }
 
 a {

@@ -15,6 +15,19 @@ export default function ProfessionalSystems() {
           {professional.map((system) => (
             <Link to={`/projects/${system.id}`} key={system.id} className="system-card card">
               <h3 className="system-title">{system.title}</h3>
+              {system.domainTags && system.domainTags.length > 0 && (
+                <div className="domain-tags">
+                  {system.domainTags.map((tag, index) => (
+                    <span key={index} className="domain-tag">{tag}</span>
+                  ))}
+                </div>
+              )}
+              {system.riskPrevented && (
+                <div className="system-section risk-section">
+                  <h4>Risk Prevented</h4>
+                  <p>{system.riskPrevented}</p>
+                </div>
+              )}
               <div className="system-section">
                 <h4>Problem</h4>
                 <p>{system.problem}</p>

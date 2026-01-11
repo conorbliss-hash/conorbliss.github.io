@@ -5,6 +5,8 @@
     "label": "Open Source",
     "anchorText": "Anchor Project (Fully Open Source)",
     "tagline": "Google Fit → Google Sheets",
+    "domainTags": ["Data Governance", "Validation", "Audit"],
+    "organizationalBridge": "Demonstrates governance principles I apply at organizational scale—schema validation, deterministic transforms, and audit-ready outputs.",
     "problem": "A fully open-source personal system that transforms raw activity data into structured, actionable guidance.",
     "approach": "Built as a fully transparent, end-to-end system with clear boundaries between data ingestion, logic, and output.",
     "tags": ["Open Source", "Data Pipeline", "Health Tech"],
@@ -15,6 +17,8 @@
     {
       "id": "workflow-automation",
       "title": "AI Workflow Automation",
+      "domainTags": ["AI Governance", "Operating Model", "Validation"],
+      "riskPrevented": "Inconsistent outputs and audit failure risk from ungoverned AI in reporting workflows",
       "problem": "Messy operational inputs created recurring manual reporting work",
       "approach": "Structured deterministic pipelines with AI used only where ambiguity remained",
       "outcome": "Consistent outputs with reduced manual effort"
@@ -22,6 +26,8 @@
     {
       "id": "decision-support",
       "title": "AI Decision Support Systems",
+      "domainTags": ["Decision Architecture", "Enablement", "Governance"],
+      "riskPrevented": "Trust breakdown from opaque AI recommendations without reviewable reasoning",
       "problem": "Ambiguous business questions lacked repeatable decision logic",
       "approach": "Translated open-ended inputs into structured, reviewable outputs",
       "outcome": "Improved clarity and speed of decision-making"
@@ -29,6 +35,8 @@
     {
       "id": "governed-data",
       "title": "Governed Data Systems",
+      "domainTags": ["Data Authority", "Audit", "Risk Prevention"],
+      "riskPrevented": "Downstream AI failures and compliance risk from unvalidated data foundations",
       "problem": "Unvalidated data created downstream risk for AI use",
       "approach": "Designed validation, ownership, and audit-ready ingestion layers",
       "outcome": "Safer foundations for automation and analysis"

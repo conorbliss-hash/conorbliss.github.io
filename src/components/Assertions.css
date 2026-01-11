@@ -1,0 +1,89 @@
+.assertions {
+  padding: calc(var(--spacing-unit) * 10) 0;
+}
+
+.assertions-list {
+  list-style: none;
+  max-width: 800px;
+}
+
+.assertion-item {
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.assertion-item:first-child {
+  border-top: 1px solid var(--border-subtle);
+}
+
+.assertion-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: calc(var(--spacing-unit) * 3) 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+
+.assertion-header:hover {
+  color: var(--accent-blue);
+}
+
+.assertion-claim {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.4;
+  transition: color 0.2s ease;
+}
+
+.assertion-header:hover .assertion-claim {
+  color: var(--accent-blue);
+}
+
+.assertion-toggle {
+  font-size: 1.25rem;
+  color: var(--text-dim);
+  font-weight: 300;
+  flex-shrink: 0;
+  margin-left: calc(var(--spacing-unit) * 3);
+  width: 24px;
+  text-align: center;
+  transition: color 0.2s ease;
+}
+
+.assertion-header:hover .assertion-toggle {
+  color: var(--accent-blue);
+}
+
+.assertion-explainer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.assertion-item.expanded .assertion-explainer {
+  max-height: 200px;
+  padding-bottom: calc(var(--spacing-unit) * 4);
+}
+
+.assertion-explainer p {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  padding-left: calc(var(--spacing-unit) * 2);
+  border-left: 2px solid var(--accent-blue-dim);
+}
+
+@media (max-width: 768px) {
+  .assertion-claim {
+    font-size: 1rem;
+  }
+  
+  .assertion-explainer p {
+    font-size: 0.875rem;
+  }
+}

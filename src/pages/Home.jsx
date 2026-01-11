@@ -1,8 +1,7 @@
 import Hero from '../components/Hero'
-import ProofSignals from '../components/ProofSignals'
+import Assertions from '../components/Assertions'
 import MarqueeProject from '../components/MarqueeProject'
 import ProfessionalSystems from '../components/ProfessionalSystems'
-import DesignPrinciples from '../components/DesignPrinciples'
 import Footer from '../components/Footer'
 
 export default function Home() {
@@ -11,8 +10,7 @@ export default function Home() {
       <Hero />
       <MarqueeProject />
       <ProfessionalSystems />
-      <ProofSignals />
-      <DesignPrinciples />
+      <Assertions />
       <Footer />
     </main>
   )
