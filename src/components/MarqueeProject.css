@@ -1,26 +1,32 @@
 .marquee-project {
   position: relative;
-  padding: calc(var(--spacing-unit) * 12) 0;
+  padding: calc(var(--spacing-unit) * 6) 0 calc(var(--spacing-unit) * 12) 0;
+  border-top: 1px solid var(--border-subtle);
 }
 
 .anchor-text {
-  font-size: 0.875rem;
-  color: var(--text-dim);
-  margin-bottom: calc(var(--spacing-unit) * 3);
-  font-weight: 500;
+  font-size: 0.8125rem;
+  color: var(--accent-blue);
+  margin-bottom: calc(var(--spacing-unit) * 4);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
 }
 
 .marquee-card {
-  background: var(--secondary-bg);
-  border: 1px solid var(--border-subtle);
-  border-radius: 8px;
-  padding: calc(var(--spacing-unit) * 8);
-  max-width: 900px;
-  transition: border-color 0.2s ease;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.03) 0%, transparent 100%);
+  border: 1px solid rgba(0, 212, 255, 0.15);
+  border-radius: 12px;
+  padding: calc(var(--spacing-unit) * 10);
+  max-width: 1000px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
 }
 
 .marquee-card:hover {
-  border-color: var(--accent-blue-dim);
+  border-color: rgba(0, 212, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.3);
 }
 
 .marquee-header {
@@ -41,16 +47,19 @@
 }
 
 .marquee-title {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: calc(var(--spacing-unit) * 2);
+  letter-spacing: -0.02em;
 }
 
 .marquee-tagline {
-  font-size: 1.125rem;
-  color: var(--text-secondary);
-  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--accent-blue);
+  font-weight: 600;
+  font-family: var(--font-mono);
+  opacity: 0.9;
 }
 
 .marquee-description {

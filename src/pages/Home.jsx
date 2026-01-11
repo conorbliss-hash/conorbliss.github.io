@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <ProofSignals />
       <MarqueeProject />
       <ProfessionalSystems />
+      <ProofSignals />
       <DesignPrinciples />
       <Footer />
     </main>
