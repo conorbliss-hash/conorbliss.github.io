@@ -1,0 +1,27 @@
+.design-principles {
+  background-color: var(--secondary-bg);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.principles-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: calc(var(--spacing-unit) * 4);
+  max-width: 1000px;
+}
+
+.principle-item {
+  font-size: 1rem;
+  color: var(--text-primary);
+  padding: calc(var(--spacing-unit) * 3);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-left: 3px solid var(--accent-blue);
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .principles-list {
+    grid-template-columns: 1fr;
+  }
+}

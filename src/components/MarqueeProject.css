@@ -1,0 +1,78 @@
+.marquee-project {
+  position: relative;
+}
+
+.marquee-card {
+  background: linear-gradient(135deg, var(--secondary-bg) 0%, rgba(0, 212, 255, 0.05) 100%);
+  border: 2px solid var(--accent-blue);
+  border-radius: 12px;
+  padding: calc(var(--spacing-unit) * 6);
+  box-shadow: 0 8px 32px rgba(0, 212, 255, 0.15);
+  animation: subtle-pulse 3s ease-in-out infinite;
+}
+
+@keyframes subtle-pulse {
+  0%, 100% {
+    box-shadow: 0 8px 32px rgba(0, 212, 255, 0.15);
+  }
+  50% {
+    box-shadow: 0 8px 32px rgba(0, 212, 255, 0.25);
+  }
+}
+
+.marquee-header {
+  margin-bottom: calc(var(--spacing-unit) * 4);
+}
+
+.marquee-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--accent-blue);
+  margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+.marquee-tagline {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+}
+
+.marquee-description {
+  font-size: 1.125rem;
+  color: var(--text-primary);
+  margin-bottom: calc(var(--spacing-unit) * 4);
+  line-height: 1.7;
+}
+
+.marquee-tags {
+  margin-bottom: calc(var(--spacing-unit) * 4);
+}
+
+.marquee-architecture {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: calc(var(--spacing-unit) * 3);
+  border-radius: 8px;
+  margin-bottom: calc(var(--spacing-unit) * 4);
+}
+
+.marquee-architecture h4 {
+  font-size: 1rem;
+  color: var(--accent-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+.marquee-architecture p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .marquee-card {
+    padding: calc(var(--spacing-unit) * 4);
+  }
+
+  .marquee-title {
+    font-size: 1.5rem;
+  }
+}
