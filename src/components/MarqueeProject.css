@@ -3,6 +3,13 @@
   padding: calc(var(--spacing-unit) * 12) 0;
 }
 
+.anchor-text {
+  font-size: 0.875rem;
+  color: var(--text-dim);
+  margin-bottom: calc(var(--spacing-unit) * 3);
+  font-weight: 500;
+}
+
 .marquee-card {
   background: var(--secondary-bg);
   border: 1px solid var(--border-subtle);

@@ -5,7 +5,11 @@ import './ProjectDetail.css'
 export default function ProjectDetail() {
   const { slug } = useParams()
   const details = projectsData.projectDetails[slug]
-  const project = projectsData.professional.find(p => p.id === slug)
+  
+  // Try to find project in professional array or use marquee if it's health-coach
+  const project = slug === 'health-coach' 
+    ? projectsData.marquee 
+    : projectsData.professional.find(p => p.id === slug)
 
   if (!details || !project) {
     return (
@@ -47,16 +51,43 @@ export default function ProjectDetail() {
 
         <section className="detail-section">
           <h2>Governance & Risk</h2>
-          <p>{details.governanceRisk}</p>
+          {Array.isArray(details.governanceRisk) ? (
+            <ul className="governance-list">
+              {details.governanceRisk.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{details.governanceRisk}</p>
+          )}
         </section>
 
         <section className="detail-section">
           <h2>Outcome</h2>
-          <p>{details.outcome}</p>
+          {Array.isArray(details.outcome) ? (
+            <ul className="outcome-list">
+              {details.outcome.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{details.outcome}</p>
+          )}
         </section>
 
-        <Link to="/" className="btn btn-primary" style={{ marginTop: '48px' }}>
-          ← Back to home
+        {details.links && (
+          <section className="detail-section">
+            <h2>Links</h2>
+            {details.links.github && (
+              <a href={details.links.github} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                View on GitHub
+              </a>
+            )}
+          </section>
+        )}
+
+        <Link to="/#/" className="btn" style={{ marginTop: '48px' }}>
+          ← Back to Projects
         </Link>
       </div>
     </main>

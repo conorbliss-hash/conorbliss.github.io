@@ -1,7 +1,7 @@
 {
   "hero": {
     "headline": "Applied AI & Data Systems Builder",
-    "subheadline": "Designing governed AI systems for real organizational constraints",
+    "subheadline": "Governing AI from data foundations to production decisions",
     "cta": {
       "primary": {
         "text": "Projects",
@@ -14,15 +14,15 @@
     }
   },
   "proofSignals": [
-    "Built and shipped governed AI systems used in production contexts",
-    "Designed workflow automations reducing recurring manual effort",
-    "Focused on validation, auditability, and risk containment",
-    "Operated end-to-end from data foundations to AI-assisted outputs"
+    "Built and shipped governed AI systems used in live organizational workflows",
+    "Designed deterministic automations with AI used only where ambiguity remained",
+    "Focused on validation, auditability, and failure containment",
+    "Owned systems end-to-end from data ingestion to decision outputs"
   ],
   "designPrinciples": [
     "Deterministic before probabilistic",
-    "AI only where ambiguity exists",
     "Governance before scale",
+    "AI only where ambiguity exists",
     "Human checkpoints by default",
     "Design for failure modes, not happy paths"
   ],

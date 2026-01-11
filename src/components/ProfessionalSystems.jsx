@@ -3,13 +3,16 @@ import projectsData from '../content/projects.json'
 import './ProfessionalSystems.css'
 
 export default function ProfessionalSystems() {
-  const { professional } = projectsData
+  const { professional, professionalFraming } = projectsData
 
   return (
     <section className="professional-systems section">
       <div className="container">
         <div className="section-number">03</div>
         <h2 className="section-title">Selected Professional Systems</h2>
+        {professionalFraming && (
+          <p className="professional-framing">{professionalFraming}</p>
+        )}
         <div className="systems-grid">
           {professional.map((system) => (
             <Link to={`/projects/${system.id}`} key={system.id} className="system-card card">

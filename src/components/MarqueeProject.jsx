@@ -9,6 +9,9 @@ export default function MarqueeProject() {
       <div className="container">
         <div className="section-number">02</div>
         <h2 className="section-title">Featured Work</h2>
+        {marquee.anchorText && (
+          <p className="anchor-text">{marquee.anchorText}</p>
+        )}
         <div className="marquee-card">
           <div className="marquee-header">
             <div className="marquee-label">{marquee.label}</div>
