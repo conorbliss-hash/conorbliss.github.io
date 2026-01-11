@@ -6,6 +6,7 @@ export default function Hero() {
 
   return (
     <section className="hero">
+      <div className="system-halo"></div>
       <div className="container">
         <div className="hero-content">
           <div className="hero-image-wrapper">
