@@ -24,6 +24,19 @@
   margin-bottom: calc(var(--spacing-unit) * 4);
 }
 
+.marquee-label {
+  display: inline-block;
+  padding: calc(var(--spacing-unit) * 1) calc(var(--spacing-unit) * 2);
+  background-color: rgba(0, 212, 255, 0.2);
+  color: var(--accent-blue);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 4px;
+  margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
 .marquee-title {
   font-size: 2.25rem;
   font-weight: 700;
@@ -39,8 +52,15 @@
 .marquee-description {
   font-size: 1.125rem;
   color: var(--text-primary);
-  margin-bottom: calc(var(--spacing-unit) * 4);
+  margin-bottom: calc(var(--spacing-unit) * 3);
   line-height: 1.7;
+}
+
+.marquee-approach {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: calc(var(--spacing-unit) * 4);
+  line-height: 1.6;
 }
 
 .marquee-tags {

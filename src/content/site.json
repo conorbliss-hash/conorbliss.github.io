@@ -1,10 +1,10 @@
 {
   "hero": {
-    "headline": "Building governed AI systems within real constraints",
-    "subheadline": "I design decision support systems, data validation pipelines, and operational tooling—focused on what survives contact with compliance teams, legacy infrastructure, and actual humans.",
+    "headline": "Applied AI & Data Systems Builder",
+    "subheadline": "Designing governed AI systems for real organizational constraints",
     "cta": {
       "primary": {
-        "text": "See Systems",
+        "text": "Projects",
         "link": "#projects"
       },
       "secondary": {
@@ -14,18 +14,17 @@
     }
   },
   "proofSignals": [
-    "Built data ingestion pipelines that enforce authority rules before AI sees anything",
-    "Shipped AI-enabled systems used in production contexts with compliance constraints",
-    "Designed weekly decision support delivered via email—not another dashboard",
-    "Work with non-technical stakeholders to translate 'AI-first' into operational reality"
+    "Built and shipped governed AI systems used in production contexts",
+    "Designed workflow automations reducing recurring manual effort",
+    "Focused on validation, auditability, and risk containment",
+    "Operated end-to-end from data foundations to AI-assisted outputs"
   ],
   "designPrinciples": [
-    "Authority before intelligence — Data quality gates before AI features",
-    "Governance as architecture, not afterthought — Compliance baked into system design",
-    "Cognitive load is a design constraint — Simplicity over feature completeness",
-    "Transparent reasoning over black-box accuracy — Explainability is non-negotiable",
-    "Email-first when possible — Reduce platform sprawl",
-    "Non-technical stakeholders are primary users — Technical elegance serves operational clarity"
+    "Deterministic before probabilistic",
+    "AI only where ambiguity exists",
+    "Governance before scale",
+    "Human checkpoints by default",
+    "Design for failure modes, not happy paths"
   ],
   "links": {
     "github": "https://github.com/conorbliss",

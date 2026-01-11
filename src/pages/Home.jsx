@@ -1,5 +1,4 @@
 import Hero from '../components/Hero'
-import About from '../components/About'
 import ProofSignals from '../components/ProofSignals'
 import MarqueeProject from '../components/MarqueeProject'
 import ProfessionalSystems from '../components/ProfessionalSystems'
@@ -10,7 +9,6 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <About />
       <ProofSignals />
       <MarqueeProject />
       <ProfessionalSystems />

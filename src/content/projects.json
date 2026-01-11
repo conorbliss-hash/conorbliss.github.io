@@ -2,93 +2,63 @@
   "marquee": {
     "id": "health-coach",
     "title": "Health Coach",
-    "tagline": "AI decision support that respects cognitive load",
-    "description": "Weekly health coaching system that delivers one prioritized action per week via email. Built to demonstrate that AI assistants don't need real-time dashboards or chat interfaces to drive behavior change. System includes structured decision logic, data validation, and transparent reasoning.",
-    "tags": ["Open Source", "Decision Support", "Email-First Design"],
-    "github": "https://github.com/conorbliss/health-coach",
-    "architecture": "Three-layer design: (1) Data ingestion with validation gates, (2) Priority ranking engine using structured rules, (3) Email delivery with explanation generation. Deliberately avoids real-time interaction to reduce cognitive overhead. Built with Python and FastAPI."
+    "label": "Open Source",
+    "tagline": "Google Fit → Google Sheets",
+    "problem": "A personal health system that transforms raw activity data into structured, actionable guidance.",
+    "approach": "Built as a fully transparent, end-to-end system with clear boundaries between data ingestion, logic, and output.",
+    "tags": ["Open Source", "Data Pipeline", "Health Tech"],
+    "github": "https://github.com/conorbliss/health-coach"
   },
   "professional": [
     {
-      "id": "data-authority-pipeline",
-      "title": "Data Authority Pipeline",
-      "problem": "Organization needed AI capabilities but had no process for ensuring input data was trustworthy or governed",
-      "approach": "Built multi-stage validation pipeline with source verification, schema enforcement, business rule validation, and audit trail generation. Data deemed 'authoritative' only after passing all gates",
-      "constraints": "Legacy system integration (no replacement allowed), role-based access control for different validation layers, zero-downtime requirement for production workflows",
-      "outcome": "Enabled AI features while satisfying compliance requirements. System flagged 18% of incoming data as non-authoritative in first month, preventing downstream AI errors"
+      "id": "workflow-automation",
+      "title": "AI Workflow Automation",
+      "problem": "Messy operational inputs created recurring manual reporting work",
+      "approach": "Structured deterministic pipelines with AI used only where ambiguity remained",
+      "outcome": "Consistent outputs with reduced manual effort"
     },
     {
-      "id": "agent-workflow-system",
-      "title": "Agent-Assisted Development Workflow",
-      "problem": "Non-technical stakeholders needed to prototype AI workflows but couldn't write code. Traditional no-code tools too limited; full coding too steep",
-      "approach": "Designed 5-step agent workflow: problem articulation, structured prompting, iterative refinement, testing protocol, and handoff documentation. Created templates for common patterns",
-      "constraints": "No budget for custom tooling, users have domain expertise but no programming background, outputs must be maintainable by technical team",
-      "outcome": "Enabled 3 non-technical users to prototype 7 operational workflows in 6 weeks. 5 were deployed to production after technical review"
+      "id": "decision-support",
+      "title": "AI Decision Support Systems",
+      "problem": "Ambiguous business questions lacked repeatable decision logic",
+      "approach": "Translated open-ended inputs into structured, reviewable outputs",
+      "outcome": "Improved clarity and speed of decision-making"
     },
     {
-      "id": "weekly-decision-support",
-      "title": "Weekly Decision Support System",
-      "problem": "Dashboards created data overload. Users had access to insights but weren't acting on them",
-      "approach": "Email-based decision support delivering one prioritized action per week. System includes data aggregation, priority scoring, explanation generation, and action templating",
-      "constraints": "Email-only (no additional platforms), must respect user cognitive load, transparent reasoning (no black-box recommendations)",
-      "outcome": "User engagement increased from 12% (dashboard) to 68% (email). Weekly action completion rate: 43%"
+      "id": "governed-data",
+      "title": "Governed Data Systems",
+      "problem": "Unvalidated data created downstream risk for AI use",
+      "approach": "Designed validation, ownership, and audit-ready ingestion layers",
+      "outcome": "Safer foundations for automation and analysis"
     }
   ],
   "projectDetails": {
-    "data-authority-pipeline": {
-      "context": "Organization operated in regulated industry requiring all AI inputs to be traceable, validated, and auditable. Existing data sources ranged from manual spreadsheets to legacy databases, with no unified governance. Teams wanted to deploy AI features but couldn't guarantee data quality or provenance.",
-      "systemDesign": "Four-stage pipeline architecture: (1) Source registration layer tracking data lineage, (2) Schema validation engine with configurable rules, (3) Business logic validator applying domain-specific constraints, (4) Authority certification with full audit trail. Each stage generates validation reports accessible to compliance teams. Built adapter pattern for legacy system integration without requiring source system changes.",
+    "workflow-automation": {
+      "context": "[Placeholder - To be filled in Patch 2]",
+      "systemDesign": "[Placeholder - To be filled in Patch 2]",
       "keyDecisions": [
-        "Validation-first architecture: data rejected by default unless explicitly validated",
-        "Separate validation logic from business logic to enable independent auditing",
-        "Implemented graduated authority levels (provisional, validated, certified) vs binary pass/fail",
-        "Built comprehensive logging infrastructure before feature development",
-        "Chose PostgreSQL over NoSQL for audit trail immutability guarantees"
+        "[Placeholder]"
       ],
-      "notDone": [
-        "Real-time streaming validation (batch processing sufficient and more auditable)",
-        "Automated data correction (preserved human review for all exceptions)",
-        "Machine learning-based validation (rule-based system more explainable to auditors)",
-        "Complete replacement of legacy systems (worked within organizational constraints)"
-      ],
-      "outcome": "System processed 2.3M records in first quarter. Flagged 18% as non-authoritative, preventing deployment of AI features on unreliable data. Zero compliance violations in first 12 months. Validation rules evolved from 23 to 147 as teams discovered edge cases. System became template for 3 additional data pipelines."
+      "governanceRisk": "[Placeholder - To be filled in Patch 2]",
+      "outcome": "[Placeholder - To be filled in Patch 2]"
     },
-    "agent-workflow-system": {
-      "context": "Product and operations teams had domain expertise but no coding ability. They needed to prototype AI-enabled workflows for their departments but existing no-code tools couldn't handle custom business logic. Technical team was backlogged and couldn't support every idea. Organization needed way to validate concepts before committing engineering resources.",
-      "systemDesign": "Structured 5-phase workflow template: (1) Problem articulation form capturing inputs, outputs, and constraints, (2) Agent prompting framework with quality criteria, (3) Iterative refinement protocol with test cases, (4) Validation checklist before handoff, (5) Technical documentation template for maintainability. Created library of prompt patterns for common workflow types (data transformation, classification, summarization). Built shared repository for successful patterns to enable reuse.",
+    "decision-support": {
+      "context": "[Placeholder - To be filled in Patch 2]",
+      "systemDesign": "[Placeholder - To be filled in Patch 2]",
       "keyDecisions": [
-        "Emphasized problem definition over tool selection (most failures were scope issues)",
-        "Required explicit test cases before prototype phase to clarify success criteria",
-        "Built 'handoff checklist' to ensure prototypes were production-ready for technical review",
-        "Created pattern library organized by workflow type, not by AI model",
-        "Invested in documentation templates that non-technical users could complete"
+        "[Placeholder]"
       ],
-      "notDone": [
-        "Custom no-code platform (used existing agent tools: Claude, ChatGPT)",
-        "Automated deployment pipeline (retained technical review as quality gate)",
-        "Version control integration (Google Docs sufficient for collaboration)",
-        "Real-time collaboration features (async workflow matched team rhythms)"
-      ],
-      "outcome": "3 non-technical users completed structured training. Prototyped 7 workflows in 6 weeks (previous pace: 1 workflow per quarter with engineering support). 5 workflows deployed to production after technical review. 2 workflows identified as infeasible before engineering investment. Pattern library grew to 12 reusable templates adopted by 2 other departments."
+      "governanceRisk": "[Placeholder - To be filled in Patch 2]",
+      "outcome": "[Placeholder - To be filled in Patch 2]"
     },
-    "weekly-decision-support": {
-      "context": "Organization had comprehensive analytics dashboard with 200+ metrics. Usage data showed 12% engagement rate. User interviews revealed cognitive overload: too many insights, no clear priorities, analysis paralysis. Users wanted 'what should I do this week?' not 'here's everything happening.' Dashboard represented sunk cost but wasn't driving decisions.",
-      "systemDesign": "Email-based system delivering single prioritized action each week: (1) Data aggregation layer pulling from existing dashboard APIs, (2) Priority scoring engine using weighted criteria (impact × urgency × effort), (3) Explanation generator providing context and reasoning, (4) Action template with next steps. System runs Sunday night, delivers Monday morning. Built unsubscribe and feedback loops to refine priority algorithm.",
+    "governed-data": {
+      "context": "[Placeholder - To be filled in Patch 2]",
+      "systemDesign": "[Placeholder - To be filled in Patch 2]",
       "keyDecisions": [
-        "One action per week (vs top 3-5) to force prioritization discipline",
-        "Email delivery only (no dashboard, no mobile app) to reduce platform switching",
-        "Transparent scoring (show why this action vs others) to build trust",
-        "Action templates included in email (reduce activation energy)",
-        "Feedback loop to adjust priority weights based on user completion data"
+        "[Placeholder]"
       ],
-      "notDone": [
-        "Mobile app (email sufficient for weekly cadence)",
-        "Real-time alerts (preserved weekly rhythm deliberately)",
-        "Chat interface for questions (kept system async to respect boundaries)",
-        "Personalized ML models (rule-based priority scoring more explainable)",
-        "Dashboard retirement (kept as optional deep-dive tool)"
-      ],
-      "outcome": "Engagement increased from 12% (dashboard) to 68% (email) within 4 weeks. Action completion rate: 43% (self-reported via feedback link). User interviews showed reduced decision fatigue. System expanded from 15 pilot users to 60 across 3 departments. Priority algorithm refined based on 200+ feedback responses. One user quote: 'Finally, something that tells me what matters instead of showing me everything.'"
+      "governanceRisk": "[Placeholder - To be filled in Patch 2]",
+      "outcome": "[Placeholder - To be filled in Patch 2]"
     }
   }
 }

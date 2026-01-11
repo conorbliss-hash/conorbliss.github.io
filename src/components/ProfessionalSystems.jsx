@@ -23,14 +23,10 @@ export default function ProfessionalSystems() {
                 <p>{system.approach}</p>
               </div>
               <div className="system-section">
-                <h4>Constraints</h4>
-                <p>{system.constraints}</p>
-              </div>
-              <div className="system-section">
                 <h4>Outcome</h4>
                 <p>{system.outcome}</p>
               </div>
-              <div className="system-link">Read 5 min case study</div>
+              <div className="system-link">View System Design</div>
             </Link>
           ))}
         </div>

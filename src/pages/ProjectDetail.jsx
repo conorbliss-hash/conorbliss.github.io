@@ -46,12 +46,8 @@ export default function ProjectDetail() {
         </section>
 
         <section className="detail-section">
-          <h2>What Was Deliberately Not Done</h2>
-          <ul className="decision-list">
-            {details.notDone.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
+          <h2>Governance & Risk</h2>
+          <p>{details.governanceRisk}</p>
         </section>
 
         <section className="detail-section">
