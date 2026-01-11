@@ -8,8 +8,6 @@ export default function ProfessionalSystems() {
   return (
     <section className="professional-systems section">
       <div className="container">
-        <div className="section-number">03</div>
-        <h2 className="section-title">Selected Professional Systems</h2>
         {professionalFraming && (
           <p className="professional-framing">{professionalFraming}</p>
         )}

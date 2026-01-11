@@ -7,8 +7,6 @@ export default function MarqueeProject() {
   return (
     <section className="marquee-project section" id="projects">
       <div className="container">
-        <div className="section-number">02</div>
-        <h2 className="section-title">Featured Work</h2>
         {marquee.anchorText && (
           <p className="anchor-text">{marquee.anchorText}</p>
         )}

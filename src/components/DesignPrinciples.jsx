@@ -7,8 +7,6 @@ export default function DesignPrinciples() {
   return (
     <section className="design-principles section">
       <div className="container">
-        <div className="section-number">04</div>
-        <h2 className="section-title">Operating Principles</h2>
         <ul className="principles-list">
           {designPrinciples.map((principle, index) => (
             <li key={index} className="principle-item">
