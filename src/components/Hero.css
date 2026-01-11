@@ -12,15 +12,15 @@
   top: 50%;
   left: 45%;
   transform: translate(-50%, -50%);
-  width: 140%;
-  height: 140%;
+  width: 120%;
+  height: 120%;
   pointer-events: none;
   z-index: 0;
   background-image: url('/system-halo.svg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.5;
+  opacity: 0.35;
 }
 
 .hero .container {
@@ -92,9 +92,9 @@
 
 @media (max-width: 768px) {
   .system-halo {
-    width: 180%;
-    height: 180%;
-    opacity: 0.3;
+    width: 150%;
+    height: 150%;
+    opacity: 0.25;
   }
 
   .hero-headline {
