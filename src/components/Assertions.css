@@ -1,5 +1,5 @@
 .assertions {
-  padding: calc(var(--spacing-unit) * 0.5) 0;
+  padding: 1.5rem 0;
 }
 
 .assertions-title {
