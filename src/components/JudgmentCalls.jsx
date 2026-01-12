@@ -9,7 +9,7 @@ export default function JudgmentCalls() {
       <div className="container">
         <p className="judgment-calls-statement">
           <span className="judgment-calls-label">{judgmentCalls.title}:</span>{' '}
-          {judgmentCalls.items.join('—')}
+          {judgmentCalls.items.join('. ')}
         </p>
       </div>
     </section>

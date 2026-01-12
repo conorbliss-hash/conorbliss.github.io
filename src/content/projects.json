@@ -6,7 +6,7 @@
     "anchorText": "Featured",
     "tagline": "Google Fit → Google Sheets",
     "domainTags": ["Data Governance", "Validation", "Audit"],
-    "organizationalBridge": "Demonstrates governance principles I apply at organizational scale—schema validation, deterministic transforms, and audit-ready outputs.",
+    "organizationalBridge": "Demonstrates governance principles I apply at organizational scale: schema validation, deterministic transforms, and audit-ready outputs.",
     "problem": "A fully open-source personal system that transforms raw activity data into structured, actionable guidance.",
     "approach": "Built as a fully transparent, end-to-end system with clear boundaries between data ingestion, logic, and output.",
     "tags": ["Open Source", "Data Pipeline", "Health Tech"],

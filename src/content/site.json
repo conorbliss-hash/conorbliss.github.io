@@ -2,7 +2,7 @@
   "hero": {
     "headline": "I design AI systems so organizations can trust decisions before they scale them.",
     "subheadline": "Most AI failures are not model failures. They are judgment failures made too late.",
-    "narrativeSpine": "My work focuses on forcing the right decisions early—about data meaning, risk boundaries, and where automation must stop.",
+    "narrativeSpine": "My work focuses on forcing the right decisions early: data meaning, risk boundaries, and where automation must stop.",
     "cta": {
       "primary": {
         "text": "Projects",
@@ -18,7 +18,7 @@
     "title": "Decisions I'm accountable for",
     "items": [
       "When AI must be constrained, not improved",
-      "When data is unsafe to reuse—even if it's technically clean",
+      "When data is unsafe to reuse, even if it's technically clean",
       "Where human judgment must be explicit and recorded",
       "How to design systems so failures surface early, not at scale"
     ]
@@ -28,7 +28,7 @@
     {
       "id": "deterministic-first",
       "claim": "Deterministic before probabilistic",
-      "explainer": "Trust cannot be inferred. AI introduces variance into systems. Before adding that variance, I exhaust deterministic options—rules, lookups, structured logic. AI solves the residual ambiguity, not the whole problem."
+      "explainer": "Trust cannot be inferred. AI introduces variance into systems. Before adding that variance, I exhaust deterministic options: rules, lookups, structured logic. AI solves the residual ambiguity, not the whole problem."
     },
     {
       "id": "governance-before-scale",
