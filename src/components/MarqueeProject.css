@@ -1,6 +1,6 @@
 .marquee-project {
   position: relative;
-  padding: calc(var(--spacing-unit) * 4) 0 calc(var(--spacing-unit) * 7) 0;
+  padding: calc(var(--spacing-unit) * 3) 0 calc(var(--spacing-unit) * 5) 0;
   border-top: 1px solid var(--border-subtle);
 }
 

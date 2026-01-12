@@ -7,14 +7,10 @@ export default function JudgmentCalls() {
   return (
     <section className="judgment-calls section">
       <div className="container">
-        <h2 className="judgment-calls-title">{judgmentCalls.title}</h2>
-        <ul className="judgment-calls-list">
-          {judgmentCalls.items.map((item, index) => (
-            <li key={index} className="judgment-call-item">
-              {item}
-            </li>
-          ))}
-        </ul>
+        <p className="judgment-calls-statement">
+          <span className="judgment-calls-label">{judgmentCalls.title}:</span>{' '}
+          {judgmentCalls.items.join('—')}
+        </p>
       </div>
     </section>
   )
