@@ -2,6 +2,14 @@
   padding: calc(var(--spacing-unit) * 10) 0;
 }
 
+.assertions-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.02em;
+}
+
 .assertions-list {
   list-style: none;
   max-width: 800px;

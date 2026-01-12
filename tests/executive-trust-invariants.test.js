@@ -30,8 +30,8 @@ describe('INV-1: Narrative Spine Visibility', () => {
 
   it('should align claim with organizational failure framing', () => {
     const spine = siteData.hero.narrativeSpine;
-    // Must reference organizations, decisions, governance, or sequencing
-    const alignedTerms = ['organization', 'decide', 'govern', 'sequence', 'operating', 'enablement'];
+    // Must reference decisions, risk, boundaries, or automation
+    const alignedTerms = ['decision', 'risk', 'boundar', 'automation', 'data', 'forcing'];
     const hasAlignment = alignedTerms.some(term => 
       spine.toLowerCase().includes(term)
     );

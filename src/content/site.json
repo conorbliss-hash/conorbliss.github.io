@@ -1,8 +1,8 @@
 {
   "hero": {
-    "headline": "Applied AI & Data Systems Builder",
-    "subheadline": "Governing AI from data foundations to production decisions",
-    "narrativeSpine": "AI enablement is an operating model problem before it is a technical one.",
+    "headline": "I design AI systems so organizations can trust decisions before they scale them.",
+    "subheadline": "Most AI failures are not model failures. They are judgment failures made too late.",
+    "narrativeSpine": "My work focuses on forcing the right decisions early—about data meaning, risk boundaries, and where automation must stop.",
     "cta": {
       "primary": {
         "text": "Projects",
@@ -14,38 +14,52 @@
       }
     }
   },
+  "judgmentCalls": {
+    "title": "Decisions I'm accountable for",
+    "items": [
+      "When AI must be constrained, not improved",
+      "When data is unsafe to reuse—even if it's technically clean",
+      "Where human judgment must be explicit and recorded",
+      "How to design systems so failures surface early, not at scale"
+    ]
+  },
+  "assertionsTitle": "Design bets I'm willing to be wrong about",
   "assertions": [
     {
       "id": "deterministic-first",
       "claim": "Deterministic before probabilistic",
-      "explainer": "AI introduces variance into systems. Before adding that variance, I exhaust deterministic options—rules, lookups, structured logic. AI solves the residual ambiguity, not the whole problem. This makes systems debuggable and auditable."
+      "explainer": "Trust cannot be inferred. AI introduces variance into systems. Before adding that variance, I exhaust deterministic options—rules, lookups, structured logic. AI solves the residual ambiguity, not the whole problem."
     },
     {
       "id": "governance-before-scale",
       "claim": "Governance before scale",
-      "explainer": "Scaling ungoverned AI creates compounding risk. I design validation layers, ownership boundaries, and audit trails before expanding scope. The cost of retrofitting governance is always higher than building it in."
+      "explainer": "Speed amplifies ambiguity. Scaling ungoverned AI creates compounding risk. I design validation layers, ownership boundaries, and audit trails before expanding scope."
     },
     {
       "id": "failure-modes",
       "claim": "Design for failure modes, not happy paths",
-      "explainer": "Happy paths are easy. I focus on what happens when inputs are malformed, when models hallucinate, when upstream data is late. Systems that handle failure gracefully earn trust; systems that assume success break it."
+      "explainer": "Happy paths are free. I focus on what happens when inputs are malformed, when models hallucinate, when upstream data is late. Systems that handle failure gracefully earn trust."
     },
     {
       "id": "human-checkpoints",
       "claim": "Human checkpoints by default",
-      "explainer": "Automation without oversight becomes a liability. I build systems where humans review before consequential actions, not after failures. 'The AI said so' is never an acceptable answer to a regulator or executive."
-    },
-    {
-      "id": "end-to-end-ownership",
-      "claim": "End-to-end system ownership",
-      "explainer": "Handoffs create gaps where failures hide. I own systems from data ingestion through decision outputs—understanding the full chain means catching problems before they compound downstream."
+      "explainer": "Judgment cannot be automated away. I build systems where humans review before consequential actions, not after failures. 'The AI said so' is never an acceptable answer."
     },
     {
       "id": "validation-auditability",
       "claim": "Validation and auditability as requirements",
-      "explainer": "If a system cannot explain its outputs or prove its inputs were valid, it should not run in production. I treat validation and audit trails as first-class requirements, not afterthoughts."
+      "explainer": "Memory and intent decay. If a system cannot explain its outputs or prove its inputs were valid, it should not run in production. I treat validation and audit trails as first-class requirements."
     }
   ],
+  "boundaries": {
+    "title": "What I deliberately do not build",
+    "items": [
+      "Fully autonomous AI in business-critical workflows",
+      "AI systems without named data owners",
+      "Dashboards without decision accountability",
+      "Automation that cannot be rolled back cleanly"
+    ]
+  },
   "links": {
     "github": "https://github.com/conorbliss",
     "linkedin": "https://linkedin.com/in/conor-bliss-henaghan",

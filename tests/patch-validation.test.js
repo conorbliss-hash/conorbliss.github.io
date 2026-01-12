@@ -19,14 +19,12 @@ const projectsData = JSON.parse(
 
 describe('Patch A - Homepage Copy Updates', () => {
   describe('A1 - Hero Section', () => {
-    it('should preserve name and headline unchanged', () => {
-      expect(siteData.hero.headline).toBe('Applied AI & Data Systems Builder');
+    it('should have judgment-focused headline', () => {
+      expect(siteData.hero.headline).toContain('trust decisions');
     });
 
-    it('should update sub-headline to new copy', () => {
-      expect(siteData.hero.subheadline).toBe(
-        'Governing AI from data foundations to production decisions'
-      );
+    it('should have sub-headline about judgment failures', () => {
+      expect(siteData.hero.subheadline).toContain('judgment failures');
     });
 
     it('should preserve CTA buttons', () => {
@@ -91,9 +89,7 @@ describe('Patch A - Homepage Copy Updates', () => {
     });
 
     it('should have anchor project framing line', () => {
-      expect(projectsData.marquee.anchorText).toBe(
-        'Anchor Project (Fully Open Source)'
-      );
+      expect(projectsData.marquee.anchorText).toBe('Featured');
     });
 
     it('should update problem description with "fully open-source"', () => {
@@ -124,9 +120,7 @@ describe('Patch A - Homepage Copy Updates', () => {
     });
 
     it('should have framing text for professional systems', () => {
-      expect(projectsData.professionalFraming).toBe(
-        'Representative system patterns shipped in professional contexts (anonymised):'
-      );
+      expect(projectsData.professionalFraming).toBe('Professional Systems');
     });
 
     it('should preserve card titles unchanged', () => {
@@ -158,13 +152,13 @@ describe('Patch A - Homepage Copy Updates', () => {
       expect(hasHumanCheckpoints).toBe(true);
     });
 
-    it('should have end-to-end ownership principle', () => {
-      const hasOwnership = siteData.assertions.some(a => 
-        a.claim.toLowerCase().includes('ownership') ||
-        a.claim.toLowerCase().includes('end-to-end') ||
-        a.explainer.toLowerCase().includes('end-to-end')
+    it('should have validation and auditability principle', () => {
+      const hasValidation = siteData.assertions.some(a => 
+        a.claim.toLowerCase().includes('validation') ||
+        a.claim.toLowerCase().includes('audit') ||
+        a.explainer.toLowerCase().includes('audit')
       );
-      expect(hasOwnership).toBe(true);
+      expect(hasValidation).toBe(true);
     });
   });
 });

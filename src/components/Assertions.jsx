@@ -3,7 +3,7 @@ import siteData from '../content/site.json'
 import './Assertions.css'
 
 export default function Assertions() {
-  const { assertions } = siteData
+  const { assertions, assertionsTitle } = siteData
   const [expandedId, setExpandedId] = useState(null)
 
   const toggleExpanded = (id) => {
@@ -13,6 +13,7 @@ export default function Assertions() {
   return (
     <section className="assertions section">
       <div className="container">
+        <h2 className="assertions-title">{assertionsTitle}</h2>
         <ul className="assertions-list">
           {assertions.map((assertion) => (
             <li 

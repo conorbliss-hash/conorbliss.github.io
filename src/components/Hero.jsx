@@ -15,14 +15,6 @@ export default function Hero() {
             {hero.narrativeSpine && (
               <p className="hero-narrative-spine">{hero.narrativeSpine}</p>
             )}
-            <div className="hero-cta">
-              <a href={hero.cta.primary.link} className="btn btn-primary">
-                {hero.cta.primary.text}
-              </a>
-              <a href={hero.cta.secondary.link} className="btn" target="_blank" rel="noopener noreferrer">
-                {hero.cta.secondary.text}
-              </a>
-            </div>
           </div>
           <div className="hero-image-wrapper">
             <img src="./profile.jpg" alt="Conor Bliss" className="hero-image" />

@@ -3,7 +3,7 @@
     "id": "health-coach",
     "title": "Health Coach",
     "label": "Open Source",
-    "anchorText": "Anchor Project (Fully Open Source)",
+    "anchorText": "Featured",
     "tagline": "Google Fit → Google Sheets",
     "domainTags": ["Data Governance", "Validation", "Audit"],
     "organizationalBridge": "Demonstrates governance principles I apply at organizational scale—schema validation, deterministic transforms, and audit-ready outputs.",
@@ -12,7 +12,7 @@
     "tags": ["Open Source", "Data Pipeline", "Health Tech"],
     "github": "https://github.com/conorbliss/health-coach"
   },
-  "professionalFraming": "Representative system patterns shipped in professional contexts (anonymised):",
+  "professionalFraming": "Professional Systems",
   "professional": [
     {
       "id": "workflow-automation",
