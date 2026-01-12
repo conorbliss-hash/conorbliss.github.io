@@ -2,7 +2,7 @@
   min-height: auto;
   display: flex;
   align-items: center;
-  padding: calc(var(--spacing-unit) * 6) 0 calc(var(--spacing-unit) * 4) 0;
+  padding: calc(var(--spacing-unit) * 4) 0 calc(var(--spacing-unit) * 2) 0;
   position: relative;
   overflow: hidden;
 }
