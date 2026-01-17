@@ -16,9 +16,11 @@
   "professional": [
     {
       "id": "workflow-automation",
-      "title": "AI Workflow Automation",
+      "title": "Governed Reporting Automation",
+      "scope": "Recurring monthly reporting, multi-team",
       "domainTags": ["AI Governance", "Operating Model", "Validation"],
       "riskPrevented": "Inconsistent outputs and audit failure risk from ungoverned AI in reporting workflows",
+      "mechanismMicro": "Schema validation",
       "mechanism": "Schema validation + human-in-loop approval gate",
       "problem": "Messy operational inputs created recurring manual reporting work",
       "approach": "Structured deterministic pipelines with AI used only where ambiguity remained",
@@ -26,9 +28,11 @@
     },
     {
       "id": "decision-support",
-      "title": "AI Decision Support Systems",
+      "title": "Quality Controls for AI-Assisted Deliverables",
+      "scope": "Decision support for ambiguous business questions",
       "domainTags": ["Decision Architecture", "Enablement", "Governance"],
       "riskPrevented": "Trust breakdown from opaque AI recommendations without reviewable reasoning",
+      "mechanismMicro": "Audit logging",
       "mechanism": "Structured reasoning trace + audit logging",
       "problem": "Ambiguous business questions lacked repeatable decision logic",
       "approach": "Translated open-ended inputs into structured, reviewable outputs",
@@ -36,9 +40,11 @@
     },
     {
       "id": "governed-data",
-      "title": "Governed Data Systems",
+      "title": "Data Ingestion Gate for Remuneration Datasets",
+      "scope": "Client-data environment, validation and audit",
       "domainTags": ["Data Authority", "Audit", "Risk Prevention"],
       "riskPrevented": "Downstream AI failures and compliance risk from unvalidated data foundations",
+      "mechanismMicro": "Rejection gate",
       "mechanism": "Rejection gate + ownership registry + rollback",
       "problem": "Unvalidated data created downstream risk for AI use",
       "approach": "Designed validation, ownership, and audit-ready ingestion layers",

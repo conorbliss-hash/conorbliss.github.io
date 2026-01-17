@@ -30,6 +30,9 @@ export default function Assertions() {
               </button>
               <div className="assertion-explainer">
                 <p>{assertion.explainer}</p>
+                   {assertion.mechanism && (
+                     <div className="assertion-mechanism">Mechanism: {assertion.mechanism}</div>
+                   )}
               </div>
             </li>
           ))}

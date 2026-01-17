@@ -30,6 +30,7 @@ export default function ProfessionalSystems() {
                 >
                   <div className="system-card-summary">
                     <h3 className="system-title">{system.title}</h3>
+                    {system.scope && <div className="system-scope">{system.scope}</div>}
                     {system.domainTags && system.domainTags.length > 0 && (
                       <div className="domain-tags">
                         {system.domainTags.map((tag, index) => (
@@ -41,12 +42,14 @@ export default function ProfessionalSystems() {
                   </div>
                   <span className="system-toggle">{isExpanded ? '−' : '+'}</span>
                 </button>
-                
                 <div className="system-card-details">
                   {system.riskPrevented && (
                     <div className="system-section risk-section">
                       <h4>Risk Prevented</h4>
                       <p>{system.riskPrevented}</p>
+                      {system.mechanismMicro && (
+                        <div className="mechanism-micro">Mechanism: {system.mechanismMicro}</div>
+                      )}
                     </div>
                   )}
                   {system.mechanism && (

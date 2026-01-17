@@ -18,6 +18,9 @@ export default function Hero() {
             {hero.operationalTrust && (
               <p className="hero-operational-trust">{hero.operationalTrust}</p>
             )}
+            {hero.proof && (
+              <p className="hero-proof"><strong>{hero.proof}</strong></p>
+            )}
           </div>
           <div className="hero-image-wrapper">
             <img src="./profile.jpg" alt="Conor Bliss" className="hero-image" />
