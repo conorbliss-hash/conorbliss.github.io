@@ -91,6 +91,11 @@
     font-size: 1rem;
   }
   
+  .assertion-header {
+    padding: calc(var(--spacing-unit) * 2) 0;
+    min-height: 44px;
+  }
+  
   .assertion-explainer p {
     font-size: 0.875rem;
   }

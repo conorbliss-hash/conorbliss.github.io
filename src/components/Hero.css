@@ -2,7 +2,7 @@
   min-height: auto;
   display: flex;
   align-items: center;
-  padding: 1.5rem 0 0.75rem 0;
+  padding: 1rem 0 0.5rem 0;
   position: relative;
   overflow: hidden;
 }
@@ -47,8 +47,8 @@
 }
 
 .hero-image {
-  width: 280px;
-  height: 280px;
+  width: min(220px, 25vw);
+  height: min(220px, 25vw);
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--border-subtle);
@@ -62,35 +62,35 @@
 }
 
 .hero-headline {
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   font-weight: 700;
-  line-height: 1.1;
-  margin-bottom: calc(var(--spacing-unit) * 3);
+  line-height: 1.15;
+  margin-bottom: calc(var(--spacing-unit) * 2);
   color: var(--text-primary);
   letter-spacing: -0.02em;
 }
 
 .hero-subheadline {
-  font-size: 1.375rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
   color: var(--text-secondary);
-  margin-bottom: calc(var(--spacing-unit) * 3);
+  margin-bottom: calc(var(--spacing-unit) * 1.5);
   line-height: 1.4;
   max-width: 700px;
 }
 
 .hero-narrative-spine {
-  font-size: 1.0625rem;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   color: var(--text-secondary);
-  margin-bottom: calc(var(--spacing-unit) * 3);
+  margin-bottom: calc(var(--spacing-unit) * 1.5);
   line-height: 1.5;
   max-width: 600px;
   font-style: italic;
 }
 
 .hero-operational-trust {
-  font-size: 0.9375rem;
+  font-size: clamp(0.8rem, 1.3vw, 0.9rem);
   color: var(--text-muted);
-  margin-bottom: calc(var(--spacing-unit) * 4);
+  margin-bottom: calc(var(--spacing-unit) * 2);
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0.01em;
@@ -128,7 +128,7 @@
   .hero-layout {
     flex-direction: column-reverse;
     text-align: center;
-    gap: calc(var(--spacing-unit) * 5);
+    gap: calc(var(--spacing-unit) * 3);
   }
 
   .hero-content {
@@ -136,8 +136,8 @@
   }
 
   .hero-image {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
 
   .system-halo {
@@ -148,11 +148,11 @@
   }
 
   .hero-headline {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .hero-subheadline {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 
   .hero-cta {

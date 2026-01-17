@@ -92,10 +92,22 @@
 
 @media (max-width: 768px) {
   .writing-card {
-    flex: 0 0 240px;
+    flex: 0 0 220px;
   }
   
   .writing-card-image {
-    height: 120px;
+    height: 90px;
+  }
+  
+  .writing-card-content {
+    padding: 0.75rem;
+  }
+  
+  .writing-card-title {
+    font-size: 0.875rem;
+  }
+  
+  .writing-card-subtitle {
+    font-size: 0.75rem;
   }
 }

@@ -1,7 +1,7 @@
 .footer {
   border-top: 1px solid var(--border-subtle);
-  padding: calc(var(--spacing-unit) * 8) 0;
-  margin-top: calc(var(--spacing-unit) * 12);
+  padding: calc(var(--spacing-unit) * 4) 0;
+  margin-top: calc(var(--spacing-unit) * 6);
 }
 
 .footer-content {
