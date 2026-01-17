@@ -7,6 +7,9 @@ export default function Hero() {
   return (
     <section className="hero">
       <div className="system-halo"></div>
+      <div className="hero-image-absolute">
+        <img src="./profile.jpg" alt="Conor Bliss" className="hero-image" />
+      </div>
       <div className="container">
         <div className="hero-layout">
           <div className="hero-content">
@@ -21,9 +24,6 @@ export default function Hero() {
             {hero.proof && (
               <p className="hero-proof"><strong>{hero.proof}</strong></p>
             )}
-          </div>
-          <div className="hero-image-wrapper">
-            <img src="./profile.jpg" alt="Conor Bliss" className="hero-image" />
           </div>
         </div>
       </div>

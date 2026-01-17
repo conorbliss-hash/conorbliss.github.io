@@ -2,7 +2,7 @@
   min-height: auto;
   display: flex;
   align-items: center;
-  padding: 4.5rem 0 0.5rem 0;
+  padding: 6rem 0 0.5rem 0;
   position: relative;
   overflow: hidden;
 }
@@ -102,23 +102,25 @@
   display: flex;
   gap: calc(var(--spacing-unit) * 3);
 }
-
-.hero-cta .btn {
-  padding: calc(var(--spacing-unit) * 2.5) calc(var(--spacing-unit) * 5);
-  font-size: 1.0625rem;
-  color: var(--text-secondary);
-  border-color: var(--border-subtle);
-}
-
-.hero-cta .btn:hover {
-  border-color: var(--accent-blue-dim);
-  color: var(--text-primary);
-  background-color: transparent;
-}
-
-.hero-cta .btn.btn-primary {
-  color: #0d1b2a;
-  background-color: var(--accent-blue);
+  /* Fixed, flush-right hero image */
+  .hero-image-absolute {
+    position: absolute;
+    top: 80px;
+    right: calc((100vw - var(--max-width)) / 2);
+    z-index: 101;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+  }
+  .hero-image-absolute .hero-image {
+    width: min(220px, 25vw);
+    height: min(220px, 25vw);
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--border-subtle);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
 }
 
 .hero-cta .btn.btn-primary:hover {

@@ -13,6 +13,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: calc(var(--spacing-unit) * 5);
+  width: 100%;
 }
 
 .system-card {

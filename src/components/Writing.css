@@ -20,6 +20,7 @@
   padding-bottom: 0.5rem;
   scrollbar-width: thin;
   scrollbar-color: var(--border) transparent;
+  width: 100%;
 }
 
 .writing-track::-webkit-scrollbar {

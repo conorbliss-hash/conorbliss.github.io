@@ -17,8 +17,8 @@
   background: linear-gradient(135deg, rgba(0, 212, 255, 0.03) 0%, transparent 100%);
   border: 1px solid rgba(0, 212, 255, 0.15);
   border-radius: 12px;
-  padding: calc(var(--spacing-unit) * 10);
-  max-width: 1000px;
+  padding: calc(var(--spacing-unit) * 6);
+  max-width: 100%;
   transition: all 0.3s ease;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
 }
