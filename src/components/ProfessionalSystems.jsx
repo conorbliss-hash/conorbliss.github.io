@@ -28,6 +28,12 @@ export default function ProfessionalSystems() {
                   <p>{system.riskPrevented}</p>
                 </div>
               )}
+              {system.mechanism && (
+                <div className="system-section mechanism-section">
+                  <h4>Mechanism</h4>
+                  <p>{system.mechanism}</p>
+                </div>
+              )}
               <div className="system-section">
                 <h4>Problem</h4>
                 <p>{system.problem}</p>

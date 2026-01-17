@@ -15,6 +15,9 @@ export default function Hero() {
             {hero.narrativeSpine && (
               <p className="hero-narrative-spine">{hero.narrativeSpine}</p>
             )}
+            {hero.operationalTrust && (
+              <p className="hero-operational-trust">{hero.operationalTrust}</p>
+            )}
           </div>
           <div className="hero-image-wrapper">
             <img src="./profile.jpg" alt="Conor Bliss" className="hero-image" />

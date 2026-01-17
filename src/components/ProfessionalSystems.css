@@ -67,6 +67,17 @@
   color: rgba(255, 180, 100, 0.8);
 }
 
+.mechanism-section {
+  background-color: rgba(0, 212, 255, 0.05);
+  padding: calc(var(--spacing-unit) * 2);
+  border-radius: 4px;
+  margin-bottom: calc(var(--spacing-unit) * 3);
+}
+
+.mechanism-section h4 {
+  color: var(--accent-blue-dim);
+}
+
 .system-section {
   margin-bottom: calc(var(--spacing-unit) * 3);
 }

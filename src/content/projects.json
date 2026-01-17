@@ -19,6 +19,7 @@
       "title": "AI Workflow Automation",
       "domainTags": ["AI Governance", "Operating Model", "Validation"],
       "riskPrevented": "Inconsistent outputs and audit failure risk from ungoverned AI in reporting workflows",
+      "mechanism": "Schema validation + human-in-loop approval gate",
       "problem": "Messy operational inputs created recurring manual reporting work",
       "approach": "Structured deterministic pipelines with AI used only where ambiguity remained",
       "outcome": "Consistent outputs with reduced manual effort"
@@ -28,6 +29,7 @@
       "title": "AI Decision Support Systems",
       "domainTags": ["Decision Architecture", "Enablement", "Governance"],
       "riskPrevented": "Trust breakdown from opaque AI recommendations without reviewable reasoning",
+      "mechanism": "Structured reasoning trace + audit logging",
       "problem": "Ambiguous business questions lacked repeatable decision logic",
       "approach": "Translated open-ended inputs into structured, reviewable outputs",
       "outcome": "Improved clarity and speed of decision-making"
@@ -37,6 +39,7 @@
       "title": "Governed Data Systems",
       "domainTags": ["Data Authority", "Audit", "Risk Prevention"],
       "riskPrevented": "Downstream AI failures and compliance risk from unvalidated data foundations",
+      "mechanism": "Rejection gate + ownership registry + rollback",
       "problem": "Unvalidated data created downstream risk for AI use",
       "approach": "Designed validation, ownership, and audit-ready ingestion layers",
       "outcome": "Safer foundations for automation and analysis"

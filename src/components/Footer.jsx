@@ -19,6 +19,9 @@ export default function Footer() {
               Medium
             </a>
           </div>
+          <p className="footer-disclosure">
+            Work examples are redacted and/or recreated with synthetic data to protect client confidentiality.
+          </p>
           <div className="footer-copyright">
             © {new Date().getFullYear()} Conor Bliss. All rights reserved.
           </div>

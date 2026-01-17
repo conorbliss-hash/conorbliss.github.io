@@ -3,6 +3,7 @@
     "headline": "I design AI systems so organizations can trust decisions before they scale them.",
     "subheadline": "Most AI failures are not model failures. They are judgment failures made too late.",
     "narrativeSpine": "My work focuses on forcing the right decisions early: data meaning, risk boundaries, and where automation must stop.",
+    "operationalTrust": "Built for production constraints: validation, logging, rollback, and controlled access.",
     "cta": {
       "primary": {
         "text": "Projects",
