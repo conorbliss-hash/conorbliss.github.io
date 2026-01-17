@@ -2,7 +2,7 @@
   min-height: auto;
   display: flex;
   align-items: center;
-  padding: 3rem 0 1.5rem 0;
+  padding: 1.5rem 0 0.75rem 0;
   position: relative;
   overflow: hidden;
 }
@@ -32,8 +32,8 @@
 .hero-layout {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: calc(var(--spacing-unit) * 8);
+  justify-content: flex-start;
+  gap: 3rem;
 }
 
 .hero-content {
