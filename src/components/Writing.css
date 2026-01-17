@@ -54,6 +54,14 @@
 .writing-card-image {
   width: 100%;
   height: 100px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.writing-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .writing-card-content {
