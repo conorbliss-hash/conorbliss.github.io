@@ -23,7 +23,7 @@ const posts = [
     title: "It's not another dashboard. It's a coach in your inbox.",
     subtitle: "From Data Overload to Clarity. One Email. One Decision for the Week.",
     url: "https://medium.com/@conor.bliss.henaghan",
-    image: "https://miro.medium.com/v2/resize:fit:2000/format:webp/1*AtFoimPl7ozxoQgP-VSsqg.png"
+    image: "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*qnd-Q-R5NgJLHwJf.png"
   }
 ]
 
